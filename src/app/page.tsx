@@ -41,7 +41,9 @@ export default function Home() {
               <BookOpenCheck className="w-12 h-12 text-[var(--color-primary)] group-hover:text-white mx-auto transition-colors" />
               <h3 className="mt-4 text-xl font-semibold text-gray-900 text-center group-hover:text-white">Citation Generator</h3>
               <div className="flex flex-col flex-grow justify-center text-center">
-                <p className="mt-2 text-gray-600 text-sm group-hover:text-white"> Quickly generate accurate references in APA, MLA, and more.</p>
+                <p className="mt-2 text-gray-600 text-sm group-hover:text-white">
+                  Quickly generate accurate references in APA, MLA, and more.
+                </p>
               </div>
             </div>
           </Link>
@@ -51,7 +53,9 @@ export default function Home() {
               <FileText className="w-12 h-12 text-[var(--color-primary)] group-hover:text-white mx-auto transition-colors" />
               <h3 className="mt-4 text-xl font-semibold text-gray-900 text-center group-hover:text-white">Word Counter</h3>
               <div className="flex flex-col flex-grow justify-center text-center">
-                <p className="mt-2 text-gray-600 text-sm group-hover:text-white">Keep track of word and character counts while writing.</p>
+                <p className="mt-2 text-gray-600 text-sm group-hover:text-white">
+                  Keep track of word and character counts while writing.
+                </p>
               </div>
             </div>
           </Link>
