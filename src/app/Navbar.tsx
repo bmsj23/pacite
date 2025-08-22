@@ -16,7 +16,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[90%] max-w-5xl flex items-center justify-between px-6 py-3 bg-white rounded-xl shadow-lg border border-gray-200 z-50">
+    <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[90%] max-w-6xl flex items-center justify-between px-6 py-3 bg-white rounded-xl shadow-lg border border-gray-200 z-50">
       <Link href="/" className="flex items-center gap-2">
         <span className="text-2xl font-extrabold text-primary tracking-tight">
           Pacite
@@ -49,6 +49,8 @@ const Navbar = () => {
       </Link>
 
       </div>
+
+      {/* Mobile navbar menu button */ }
 
       <button
         className="md:hidden p-2 rounded-md hover:bg-gray-100"
