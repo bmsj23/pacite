@@ -1,7 +1,7 @@
 export default function WordCounter() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-600">Word Counter Tool</h1>
+      <h1 className="text-4xl font-bold text-[var(--primary-color)]">Word Counter Tool</h1>
       <p className="mt-4 text-lg text-gray-700">
         This tool will help you count the number of words in your text.
       </p>

@@ -38,39 +38,45 @@ export default function Home() {
             What are you working on today?
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Choose from a set of tools designed to make your writing easier and faster.
+            Choose from a set of tools designed to make your writing needs done at ease.
           </p>
         </div>
-
         
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+          <Link href="/tools/citation-generator">
+            <div className="flex flex-col h-full group p-6 rounded-2xl shadow-md border bg-green-50 hover:bg-[var(--color-primary)] hover:shadow-lg transition-all cursor-pointer">
+              <BookOpenCheck className="w-12 h-12 text-[var(--color-primary)] group-hover:text-white mx-auto transition-colors" />
+              <h3 className="mt-4 text-xl font-semibold text-gray-900 text-center group-hover:text-white">Citation Generator</h3>
+              <div className="flex flex-col flex-grow justify-center text-center">
+                <p className="mt-2 text-gray-600 text-sm group-hover:text-white"> Quickly generate accurate references in APA, MLA, and more.</p>
+              </div>
+            </div>
+          </Link>
 
-          <div className="group p-6 rounded-2xl shadow-md border bg-green-50 hover:bg-[var(--color-primary)] hover:shadow-lg transition-all cursor-pointer">
-            <BookOpenCheck className="w-12 h-12 text-[var(--color-primary)] group-hover:text-white mx-auto transition-colors" />
-            <h3 className="mt-4 text-xl font-semibold text-gray-900 text-center group-hover:text-white">Citation Generator</h3>
-            <p className="mt-2 text-gray-600 text-sm text-center group-hover:text-white">
-              Quickly generate accurate references in APA, MLA, and more.
-            </p>
-          </div>
+          <Link href="/tools/word-counter">
+            <div className="flex flex-col group p-6 rounded-2xl shadow-md border bg-green-50 hover:bg-[var(--color-primary)] hover:shadow-lg transition-all cursor-pointer h-full">
+              <FileText className="w-12 h-12 text-[var(--color-primary)] group-hover:text-white mx-auto transition-colors" />
+              <h3 className="mt-4 text-xl font-semibold text-gray-900 text-center group-hover:text-white">Word Counter</h3>
+              <div className="flex flex-col flex-grow justify-center text-center">
+                <p className="mt-2 text-gray-600 text-sm group-hover:text-white">Keep track of word and character counts while writing.</p>
+              </div>
+            </div>
+          </Link>
 
-          <div className="group p-6 rounded-2xl shadow-md border bg-green-50 hover:bg-[var(--color-primary)] hover:shadow-lg transition-all cursor-pointer">
-            <FileText className="w-12 h-12 text-[var(--color-primary)] group-hover:text-white mx-auto transition-colors" />
-            <h3 className="mt-4 text-xl font-semibold text-gray-900 text-center group-hover:text-white">Word Counter</h3>
-            <p className="mt-2 text-gray-600 text-sm text-center group-hover:text-white">
-              Keep track of word and character counts while writing.
-            </p>
-          </div>
-
-          <div className="p-6 rounded-2xl shadow-md border bg-gray-100 hover:shadow-lg transition-all opacity-70">
+          <div className="flex flex-col p-6 rounded-2xl shadow-md border bg-gray-100 hover:shadow-lg transition-all opacity-70 h-full text-center justify-center">
             <SpellCheck className="w-12 h-12 text-gray-400 mx-auto" />
             <h3 className="mt-4 text-xl font-semibold text-gray-500 text-center">Grammar Check</h3>
-            <p className="mt-2 text-gray-500 text-sm text-center">Coming soon</p>
+            <div className="flex flex-col flex-grow justify-center text-center">
+              <p className="mt-2 text-gray-500 text-sm italic">Coming soon!</p>
+            </div>
           </div>
 
-          <div className="p-6 rounded-2xl shadow-md border bg-gray-100 hover:shadow-lg transition-all opacity-70">
+          <div className="flex flex-col p-6 rounded-2xl shadow-md border bg-gray-100 hover:shadow-lg transition-all opacity-70 h-full">
             <Repeat className="w-12 h-12 text-gray-400 mx-auto" />
             <h3 className="mt-4 text-xl font-semibold text-gray-500 text-center">Paraphrasing Tool</h3>
-            <p className="mt-2 text-gray-500 text-sm text-center">Coming soon</p>
+            <div className="flex flex-col flex-grow justify-center text-center">
+              <p className="mt-2 text-gray-500 text-sm italic">Coming soon!</p>
+            </div>
           </div>
         </div>
       </section>
