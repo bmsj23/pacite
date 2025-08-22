@@ -17,18 +17,11 @@ export default function Home() {
         </p>
 
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
-          <Link
-            href="/get-started"
-            className="px-6 py-3 rounded-full bg-[var(--color-primary)] text-white font-medium shadow-md hover:bg-green-700 hover:shadow-lg transition-all duration-300 ease-in-out"
-          >
-            Get Started
-          </Link>
-          <Link
-            href="/about"
-            className="px-6 py-3 rounded-full border border-gray-300 text-gray-700 font-medium hover:border-primary hover:bg-gray-100 text-primary transition-all duration-300 ease-in-out"
-          >
-            Learn More
-          </Link>
+          <Link href="/get-started"
+            className="px-6 py-3 rounded-full bg-[var(--color-primary)] text-white font-medium shadow-md hover:bg-green-700 hover:shadow-lg transition-all duration-300 ease-in-out">Get Started</Link>
+
+          <Link href="/about"
+            className="px-6 py-3 rounded-full border border-gray-300 text-gray-700 font-medium hover:border-primary hover:bg-gray-100 text-primary transition-all duration-300 ease-in-out">Learn More</Link>
         </div>
       </section>
 
