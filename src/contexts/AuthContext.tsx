@@ -52,7 +52,7 @@ function AuthContextProvider({ children }: { children: React.ReactNode }) {
       } else {
         return { success: true };
       }
-    } catch (error) {
+    } catch {
       return { success: false, error: "Network error. Please try again." };
     }
   };
@@ -77,7 +77,7 @@ function AuthContextProvider({ children }: { children: React.ReactNode }) {
       } else {
         return { success: false, error: data.message };
       }
-    } catch (error) {
+    } catch {
       return { success: false, error: "Network error. Please try again." };
     }
   };
