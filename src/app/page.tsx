@@ -7,18 +7,18 @@ import { BookOpenCheck, FileText, SpellCheck, Repeat } from "lucide-react";
 export default function Home() {
   return (
     <>
-      <section className="relative flex flex-col items-center justify-center text-center min-h-screen bg-gradient-to-b from-white to-green-50 px-6 pt-32">
-        <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+      <section className="relative flex flex-col items-center justify-center text-center min-h-screen bg-gradient-to-b from-white to-green-50 px-4 sm:px-6 pt-20 sm:pt-32">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
           Simplify Your{" "}
           <span className="text-[var(--color-primary)]">Citations</span> &
           Writing
         </h1>
-        <p className="mt-6 max-w-2xl text-lg md:text-xl text-gray-700">
+        <p className="mt-4 sm:mt-6 max-w-2xl text-base sm:text-lg md:text-xl text-gray-700 px-2">
           Pacite helps you generate accurate citations and manage your writing
           with ease, saving you time and effort.
         </p>
 
-        <div className="mt-8 flex flex-col sm:flex-row gap-4">
+        <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 w-full max-w-sm sm:max-w-none">
           <button
             onClick={() => {
               const toolsSection = document.getElementById("tools");
@@ -27,17 +27,18 @@ export default function Home() {
                 const elementPosition = toolsSection.offsetTop;
                 window.scrollTo({
                   top: elementPosition,
-                  behavior: "smooth"
+                  behavior: "smooth",
                 });
               }
             }}
-            className="px-6 py-3 rounded-full bg-[var(--color-primary)] text-white font-medium shadow-md hover:bg-green-700 hover:shadow-lg transition-all duration-300 ease-in-out cursor-pointer">
+            className="px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-[var(--color-primary)] text-white font-medium shadow-md hover:bg-green-700 hover:shadow-lg transition-all duration-300 ease-in-out cursor-pointer text-sm sm:text-base"
+          >
             Get Started
           </button>
 
           <Link
             href="/about"
-            className="px-6 py-3 rounded-full border border-gray-300 text-gray-700 font-medium hover:border-primary hover:bg-gray-100 text-primary transition-all duration-300 ease-in-out"
+            className="px-4 sm:px-6 py-2 sm:py-3 rounded-full border border-gray-300 text-gray-700 font-medium hover:border-[var(--color-primary)] hover:bg-gray-100 hover:text-[var(--color-primary)] transition-all duration-300 ease-in-out text-sm sm:text-base text-center"
           >
             Learn More
           </Link>
@@ -46,18 +47,19 @@ export default function Home() {
 
       <section
         id="tools"
-        className="relative flex flex-col py-20 bg-white px-6 min-h-screen items-center justify-center"
+        className="relative flex flex-col py-12 sm:py-20 bg-white px-4 sm:px-6 min-h-screen items-center justify-center"
       >
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
             What are you working on today?
           </h2>
-          <p className="mt-4 text-lg text-gray-600">
-            Choose from a set of tools designed to make your writing needs done at ease.
+          <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+            Choose from a set of tools designed to make your writing needs done
+            at ease.
           </p>
         </div>
 
-        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+        <div className="mt-8 sm:mt-16 grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto w-full">
           <Link href="/tools/citation-generator">
             <div className="flex flex-col h-full group p-6 rounded-2xl shadow-md border bg-green-50 hover:bg-[var(--color-primary)] hover:shadow-lg transition-all cursor-pointer">
               <BookOpenCheck className="w-12 h-12 text-[var(--color-primary)] group-hover:text-white mx-auto transition-colors" />

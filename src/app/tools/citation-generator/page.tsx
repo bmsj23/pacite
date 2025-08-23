@@ -239,11 +239,11 @@ export default function CitationGenerator() {
   };
 
   return (
-    <main className="flex flex-col min-h-screen bg-gray-100 justify-center items-center px-6">
+    <main className="flex flex-col min-h-screen bg-gray-100 justify-center items-center px-4 sm:px-6 pt-20">
       <div className="w-full max-w-2xl text-center">
         {/* Top section: Heading & Description */}
-        <div className="mb-16">
-          <h1 className="text-5xl md:text-4xl font-extrabold text-gray-900 leading-tight">
+        <div className="mb-8 sm:mb-16">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
             Citation Generator
           </h1>
           <p className="mt-4 text-md text-gray-700">
@@ -268,18 +268,18 @@ export default function CitationGenerator() {
         </div>
 
         {/* Input container */}
-        <div className="relative w-full flex items-center focus:shadow-md">
+        <div className="relative w-full flex flex-col sm:flex-row items-stretch sm:items-center focus:shadow-md gap-2 sm:gap-0">
           {/* Dropdown on the left */}
-          <div className="relative z-10">
+          <div className="relative z-10 w-full sm:w-auto">
             <button
               onClick={() => setOpen(!open)}
-              className="flex items-center justify-between px-4 h-12 w-32 bg-gray-100 border border-r border-gray-300 rounded-l-lg text-gray-700 text-sm focus:outline-none hover:overflow-hidden  focus:ring-0 transition box-border"
+              className="flex items-center justify-between px-4 h-12 w-full sm:w-32 bg-gray-100 border border-gray-300 rounded-lg sm:rounded-l-lg sm:rounded-r-none text-gray-700 text-sm focus:outline-none hover:overflow-hidden focus:ring-0 transition box-border"
             >
               {format} <span className="ml-1">&#9662;</span>
             </button>
 
             {open && (
-              <ul className="absolute top-full left-0 mt-0 w-32 rounded-lg bg-gray-100 border border-gray-300 rounded-b-lg shadow-lg z-50">
+              <ul className="absolute top-full left-0 mt-0 w-full sm:w-32 rounded-lg bg-gray-100 border border-gray-300 shadow-lg z-50">
                 {options.map((option) => (
                   <li
                     key={option}
@@ -302,14 +302,14 @@ export default function CitationGenerator() {
             placeholder="Enter any URL, DOI, or ISBN..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            className="flex-1 h-12 p-4 border border-gray-300 border-l-0 border-r-0 text-black focus:outline-none focus:ring-0 focus:shadow-md transition box-border"
+            className="flex-1 h-12 p-4 border border-gray-300 sm:border-l-0 sm:border-r-0 text-black focus:outline-none focus:ring-0 focus:shadow-md transition box-border rounded-lg sm:rounded-none"
           />
 
           {/* Cite button on the right */}
           <button
             onClick={handleCite}
             disabled={isLoading || !citationLoaded}
-            className="px-6 py-2 h-12 bg-[var(--color-primary)] text-white rounded-r-lg hover:bg-green-700 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="px-6 py-2 h-12 bg-[var(--color-primary)] text-white rounded-lg sm:rounded-l-none sm:rounded-r-lg hover:bg-green-700 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed w-full sm:w-auto"
           >
             {isLoading ? "Citing..." : "Cite"}
           </button>
@@ -318,7 +318,7 @@ export default function CitationGenerator() {
         {/* Citation output */}
         {citation && (
           <div className="mt-8 p-4 bg-white shadow rounded-lg text-left">
-            <div className="flex justify-between items-start mb-2">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 gap-2">
               <h2 className="text-lg font-semibold">Generated Citation:</h2>
               <button
                 onClick={async () => {
@@ -343,7 +343,7 @@ export default function CitationGenerator() {
                     setTimeout(() => setCopied(false), 2000);
                   }
                 }}
-                className={`flex items-center gap-1 px-1 w-16 py-1 text-white text-xs rounded transition-colors duration-200 ${
+                className={`flex items-center gap-1 px-2 sm:px-1 py-1 text-white text-xs rounded transition-colors duration-200 w-full sm:w-16 justify-center ${
                   copied
                     ? "bg-gray-400 hover:bg-gray-700"
                     : "bg-gray-400 hover:bg-gray-700"

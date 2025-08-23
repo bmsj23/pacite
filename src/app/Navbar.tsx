@@ -293,13 +293,9 @@ const Navbar = () => {
             })}
           </ul>
 
-          <Link
-            href="/get-started"
-            onClick={() => setIsOpen(false)}
-            className="mt-6 block text-center px-4 py-2 bg-[var(--color-primary)] text-white rounded-full hover:bg-green-700 transition-colors duration-200"
-          >
-            Get Started
-          </Link>
+          <div className="mt-6">
+            <UserDropdown />
+          </div>
         </div>
       )}
     </nav>
