@@ -41,12 +41,11 @@ const Navbar = () => {
           ))}
         </ul>
 
-      <Link
-        href="/get-started"
-        className="ml-4 px-4 py-2 bg-[var(--color-primary)] text-white rounded-md hover:bg-green-700 transition-colors duration-200"
-      >
-        Get Started
-      </Link>
+        <Link
+          href="/get-started"
+          className="ml-4 px-4 py-2 bg-[var(--color-primary)] text-white rounded-md hover:bg-green-700 transition-colors duration-200">
+          Get Started
+        </Link>
 
       </div>
 
@@ -71,8 +70,7 @@ const Navbar = () => {
                     pathname === href
                       ? "bg-green-50 text-primary"
                       : "text-gray-700 hover:bg-green-50 hover:text-primary"
-                  }`}
-                >
+                  }`}>
                   {label}
                 </Link>
               </li>
@@ -82,8 +80,7 @@ const Navbar = () => {
           <Link
             href="/get-started"
             onClick={() => setIsOpen(false)}
-            className="mt-6 block text-center px-4 py-2 bg-[var(--color-primary)] text-white rounded-full hover:bg-green-700 transition-colors duration-200"
-          >
+            className="mt-6 block text-center px-4 py-2 bg-[var(--color-primary)] text-white rounded-full hover:bg-green-700 transition-colors duration-200">
             Get Started
           </Link>
         </div>
