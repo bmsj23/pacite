@@ -35,7 +35,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative flex flex-col py-20 bg-white px-6 min-h-screen items-center justify-center">
+      <section
+        id="tools"
+        className="relative flex flex-col py-20 bg-white px-6 min-h-screen items-center justify-center"
+      >
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
             What are you working on today?
