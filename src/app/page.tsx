@@ -31,8 +31,7 @@ export default function Home() {
                 });
               }
             }}
-            className="px-6 py-3 rounded-full bg-[var(--color-primary)] text-white font-medium shadow-md hover:bg-green-700 hover:shadow-lg transition-all duration-300 ease-in-out cursor-pointer"
-          >
+            className="px-6 py-3 rounded-full bg-[var(--color-primary)] text-white font-medium shadow-md hover:bg-green-700 hover:shadow-lg transition-all duration-300 ease-in-out cursor-pointer">
             Get Started
           </button>
 
