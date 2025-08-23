@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Navbar";
+import { AuthProvider } from "@/contexts/AuthContext";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -16,7 +17,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Pacite",
-  description: "Pacite is a tool that helps you create and manage your projects.",
+  description:
+    "Pacite is a tool that helps you create and manage your projects.",
 };
 
 export default function RootLayout({
@@ -27,8 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${poppins.variable} antialiased`}>
-        <Navbar />
-        {children}
+        <AuthProvider>
+          <Navbar />
+          {children}
+        </AuthProvider>
       </body>
     </html>
   );
