@@ -63,7 +63,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[90%] max-w-6xl flex items-center justify-between px-6 py-3 bg-white rounded-xl shadow-lg border border-gray-200 z-50">
       <Link href="/" className="flex items-center gap-2">
-        <span className="text-2xl font-extrabold text-primary tracking-tight">
+        <span className="text-2xl font-extrabold text-[var(--color-primary)] tracking-tight">
           Pacite
         </span>
       </Link>
@@ -83,8 +83,8 @@ const Navbar = () => {
                       href={href}
                       className={`flex items-center gap-1 px-3 py-2 rounded-md font-medium transition-colors duration-200 ${
                         pathname.startsWith("/tools")
-                          ? "bg-green-50 text-primary"
-                          : "text-gray-700 hover:bg-green-50 hover:text-primary"
+                          ? "bg-green-50 text-[var(--color-primary)]"
+                          : "text-gray-700 hover:bg-green-50 hover:text-[var(--color-primary)]"
                       }`}
                     >
                       {label}
@@ -175,8 +175,8 @@ const Navbar = () => {
                   href={href}
                   className={`px-3 py-2 rounded-md font-medium transition-colors duration-200 ${
                     pathname === href
-                      ? "bg-green-50 text-primary"
-                      : "text-gray-700 hover:bg-green-50 hover:text-primary"
+                      ? "bg-green-50 text-[var(--color-primary)]"
+                      : "text-gray-700 hover:bg-green-50 hover:text-[var(--color-primary)]"
                   }`}
                 >
                   {label}
@@ -212,8 +212,8 @@ const Navbar = () => {
                       onClick={() => setIsOpen(false)}
                       className={`block px-3 py-2 rounded-md font-medium transition-colors duration-200 ${
                         pathname.startsWith("/tools")
-                          ? "bg-green-50 text-primary"
-                          : "text-gray-700 hover:bg-green-50 hover:text-primary"
+                          ? "bg-green-50 text-[var(--color-primary)]"
+                          : "text-gray-700 hover:bg-green-50 hover:text-[var(--color-primary)]"
                       }`}
                     >
                       {label}
@@ -282,8 +282,8 @@ const Navbar = () => {
                     onClick={() => setIsOpen(false)}
                     className={`block px-3 py-2 rounded-md font-medium transition-colors duration-200 ${
                       pathname === href
-                        ? "bg-green-50 text-primary"
-                        : "text-gray-700 hover:bg-green-50 hover:text-primary"
+                        ? "bg-green-50 text-[var(--color-primary)]"
+                        : "text-gray-700 hover:bg-green-50 hover:text-[var(--color-primary)]"
                     }`}
                   >
                     {label}
