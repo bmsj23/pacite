@@ -3,8 +3,8 @@ import { BookOpenCheck, FileText, SpellCheck, Repeat } from "lucide-react";
 
 export default function Tools() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 px-4 sm:px-6 pt-20">
-      <div className="text-center max-w-4xl mx-auto">
+    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 px-4 sm:px-6 pt-28">
+      <div className="text-center w-[90%] max-w-6xl mx-auto">
         <h1 className="pt-10 text-3xl sm:text-4xl font-bold text-[var(--color-primary)]">
           Welcome to Pacite!
         </h1>
@@ -14,7 +14,7 @@ export default function Tools() {
         </p>
       </div>
 
-      <div className="mt-8 sm:mt-16 grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto w-full">
+      <div className="mt-8 sm:mt-16 grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full">
         <Link href="/tools/citation-generator">
           <div className="flex flex-col h-full group p-6 rounded-2xl shadow-md border bg-green-50 hover:bg-[var(--color-primary)] hover:shadow-lg transition-all cursor-pointer">
             <BookOpenCheck className="w-12 h-12 text-[var(--color-primary)] group-hover:text-white mx-auto transition-colors" />

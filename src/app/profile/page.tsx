@@ -44,8 +44,8 @@ export default function Profile() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-20 px-4 sm:px-6">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-gray-50 pt-28 px-4 sm:px-6">
+      <div className="w-[90%] max-w-6xl mx-auto">
         {/* Header */}
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 mb-4 sm:mb-6">
           <div className="px-4 py-6 sm:px-6 sm:py-8">

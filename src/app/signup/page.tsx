@@ -63,8 +63,8 @@ export default function SignUp() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 flex items-center justify-center p-4 pt-20">
-      <div className="max-w-md w-full space-y-8">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 flex items-center justify-center px-4 sm:px-6 pt-28">
+      <div className="w-[90%] max-w-md space-y-8">
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <div className="text-center">
             <Link href="/" className="inline-block">

@@ -8,8 +8,8 @@ export default function WordCounter() {
   const wordCount = text.trim() === "" ? 0 : text.trim().split(/\s+/).length;
 
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 px-4 sm:px-6 pt-20">
-      <div className="w-full max-w-2xl text-center">
+    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 px-4 sm:px-6 pt-28">
+      <div className="w-[90%] max-w-6xl text-center">
         {/* Heading */}
         <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
           Word Counter Tool

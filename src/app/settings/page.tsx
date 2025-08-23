@@ -11,6 +11,7 @@ import {
   Download,
   Trash2,
   AlertTriangle,
+  LogOut,
 } from "lucide-react";
 
 export default function Settings() {
@@ -49,8 +50,8 @@ export default function Settings() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-20 px-4 sm:px-6">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-gray-50 pt-28 px-4 sm:px-6">
+      <div className="w-[90%] max-w-6xl mx-auto">
         {/* Header */}
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 mb-4 sm:mb-6">
           <div className="px-4 py-6 sm:px-6 sm:py-8">
@@ -203,6 +204,21 @@ export default function Settings() {
                     </h3>
                     <p className="text-sm text-gray-500">
                       Export all your account data
+                    </p>
+                  </div>
+                </button>
+
+                <button
+                  onClick={() => signOut()}
+                  className="flex items-center gap-3 w-full p-3 text-left border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors"
+                >
+                  <LogOut size={16} className="text-gray-400" />
+                  <div>
+                    <h3 className="text-sm font-medium text-gray-900">
+                      Sign Out
+                    </h3>
+                    <p className="text-sm text-gray-500">
+                      Sign out of your account
                     </p>
                   </div>
                 </button>

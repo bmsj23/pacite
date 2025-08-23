@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-gray-50 pt-20">
+    <div className="min-h-screen bg-gray-50 pt-28">
       {/* Hero Section */}
       <section className="relative bg-white py-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="w-[90%] max-w-6xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             About <span className="text-[var(--color-primary)]">Pacite</span>
           </h1>
@@ -19,7 +19,7 @@ export default function About() {
 
       {/* Mission Section */}
       <section className="py-20 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
+        <div className="w-[90%] max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Pacite&apos;s Mission
@@ -88,7 +88,7 @@ export default function About() {
 
       {/* Story Section */}
       <section className="py-20 px-6 bg-white">
-        <div className="max-w-4xl mx-auto">
+        <div className="w-[90%] max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
             Our Story
           </h2>
@@ -116,7 +116,7 @@ export default function About() {
 
       {/* Features Section */}
       <section className="py-20 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
+        <div className="w-[90%] max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
             What Makes Pacite Special
           </h2>
@@ -161,7 +161,7 @@ export default function About() {
 
       {/* CTA Section */}
       <section className="py-20 px-6 bg-[var(--color-primary)]">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="w-[90%] max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready to Transform Your Writing?
           </h2>

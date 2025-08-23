@@ -239,8 +239,8 @@ export default function CitationGenerator() {
   };
 
   return (
-    <main className="flex flex-col min-h-screen bg-gray-100 justify-center items-center px-4 sm:px-6 pt-20">
-      <div className="w-full max-w-2xl text-center">
+    <main className="flex flex-col min-h-screen bg-gray-100 justify-center items-center px-4 sm:px-6 pt-28">
+      <div className="w-[90%] max-w-6xl text-center">
         {/* Top section: Heading & Description */}
         <div className="mb-8 sm:mb-16">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
