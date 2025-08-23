@@ -88,7 +88,7 @@ export default function SignIn() {
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                    className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent text-gray-600 placeholder:text-gray-400"
                     placeholder="Enter your email"
                   />
                 </div>
@@ -113,7 +113,7 @@ export default function SignIn() {
                     required
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="block w-full pl-10 pr-10 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                    className="block w-full pl-10 pr-10 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent text-gray-600 placeholder:text-gray-400"
                     placeholder="Enter your password"
                   />
                   <button
@@ -187,7 +187,7 @@ export default function SignIn() {
               Don&apos;t have an account?{" "}
               <Link
                 href="/signup"
-                className="font-medium text-primary hover:text-primary-dark transition-colors"
+                className="font-medium text-primary hover:text-primary-dark transition-colors text-[var(--color-primary)] hover:text-green-700 hover:shadow-xs"
               >
                 Sign up
               </Link>
