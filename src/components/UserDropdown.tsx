@@ -100,7 +100,13 @@ export default function UserDropdown({
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-56 bg-white border border-gray-200 rounded-lg shadow-lg py-2 z-50">
+        <div
+          className={`absolute ${
+            isMobile ? "left-0 right-0" : "right-0"
+          } mt-2 ${
+            isMobile ? "w-full" : "w-56"
+          } bg-white border border-gray-200 rounded-lg shadow-lg py-2 z-50`}
+        >
           <div className="px-4 py-2 border-b border-gray-100">
             <p className="text-sm font-medium text-gray-900">
               {session?.user?.name || "User"}
@@ -112,7 +118,10 @@ export default function UserDropdown({
             <Link
               href="/profile"
               className="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors duration-200"
-              onClick={() => setIsOpen(false)}
+              onClick={() => {
+                setIsOpen(false);
+                if (onNavigate) onNavigate();
+              }}
             >
               <User size={16} />
               Profile
@@ -120,7 +129,10 @@ export default function UserDropdown({
             <Link
               href="/settings"
               className="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors duration-200"
-              onClick={() => setIsOpen(false)}
+              onClick={() => {
+                setIsOpen(false);
+                if (onNavigate) onNavigate();
+              }}
             >
               <Settings size={16} />
               Settings
