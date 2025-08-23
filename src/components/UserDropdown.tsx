@@ -30,13 +30,13 @@ export default function UserDropdown() {
     return (
       <div className="flex items-center gap-3">
         <Link
-          href="/auth/signin"
+          href="/signin"
           className="px-4 py-2 text-gray-700 hover:text-[var(--color-primary)] font-medium transition-colors duration-200"
         >
           Sign In
         </Link>
         <Link
-          href="/auth/signup"
+          href="/signup"
           className="px-4 py-2 bg-[var(--color-primary)] text-white rounded-md hover:bg-green-700 font-medium transition-colors duration-200"
         >
           Sign Up

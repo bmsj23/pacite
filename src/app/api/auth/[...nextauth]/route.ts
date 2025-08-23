@@ -2,7 +2,12 @@ import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import CredentialsProvider from "next-auth/providers/credentials";
 
-const users: Array<{ id: string; name: string; email: string; password: string }> = [];
+const users: Array<{
+  id: string;
+  name: string;
+  email: string;
+  password: string;
+}> = [];
 
 const handler = NextAuth({
   providers: [
@@ -22,7 +27,7 @@ const handler = NextAuth({
         }
 
         const user = users.find((u) => u.email === credentials.email);
-        
+
         if (user && user.password === credentials.password) {
           return {
             id: user.id,
@@ -39,7 +44,7 @@ const handler = NextAuth({
     strategy: "jwt",
   },
   pages: {
-    signIn: "/auth/signin",
+    signIn: "/signin",
   },
   callbacks: {
     async jwt({ token, user }) {
@@ -59,9 +64,7 @@ const handler = NextAuth({
 
 export { handler as GET, handler as POST };
 
-
 export function registerUser(name: string, email: string, password: string) {
- 
   if (users.find((u) => u.email === email)) {
     throw new Error("User already exists");
   }
