@@ -18,7 +18,7 @@ export default function Home() {
           with ease, saving you time and effort.
         </p>
 
-        <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 w-full max-w-sm sm:max-w-none">
+        <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 w-full max-w-sm sm:max-w-none justify-center">
           <button
             onClick={() => {
               const toolsSection = document.getElementById("tools");

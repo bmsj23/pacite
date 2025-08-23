@@ -5,7 +5,15 @@ import Link from "next/link";
 import { User, Settings, LogOut, ChevronDown } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 
-export default function UserDropdown() {
+interface UserDropdownProps {
+  isMobile?: boolean;
+  onNavigate?: () => void;
+}
+
+export default function UserDropdown({
+  isMobile = false,
+  onNavigate,
+}: UserDropdownProps) {
   const { session, signOut, loading } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -28,16 +36,26 @@ export default function UserDropdown() {
 
   if (!session) {
     return (
-      <div className="flex items-center gap-3">
+      <div
+        className={`flex ${isMobile ? "flex-col gap-3" : "items-center gap-3"}`}
+      >
         <Link
           href="/signin"
-          className="px-4 py-2 text-gray-700 hover:text-[var(--color-primary)] font-medium transition-colors duration-200"
+          onClick={onNavigate}
+          className={`${
+            isMobile ? "w-full text-center" : ""
+          } px-4 py-2 text-gray-700 hover:text-[var(--color-primary)] font-medium transition-colors duration-200 ${
+            isMobile ? "border border-gray-300 rounded-md hover:bg-gray-50" : ""
+          }`}
         >
           Sign In
         </Link>
         <Link
           href="/signup"
-          className="px-4 py-2 bg-[var(--color-primary)] text-white rounded-md hover:bg-green-700 font-medium transition-colors duration-200"
+          onClick={onNavigate}
+          className={`${
+            isMobile ? "w-full text-center" : ""
+          } px-4 py-2 bg-[var(--color-primary)] text-white rounded-md hover:bg-green-700 font-medium transition-colors duration-200`}
         >
           Sign Up
         </Link>

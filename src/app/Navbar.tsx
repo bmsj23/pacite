@@ -294,7 +294,7 @@ const Navbar = () => {
           </ul>
 
           <div className="mt-6">
-            <UserDropdown />
+            <UserDropdown isMobile={true} onNavigate={() => setIsOpen(false)} />
           </div>
         </div>
       )}
