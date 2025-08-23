@@ -130,14 +130,11 @@ function extractMetadata(html: string, url: string): CitationMetadata {
   // standard author meta tags
   if (authors.length === 0) {
     $('meta[name="author"]').each((_, el) => {
-
       const author = $(el).attr("content");
 
       if (author && isValidAuthor(author)) {
-
         // split multiple authors if separated by commas or semicolons
         author.split(/[,;]/).forEach((a) => {
-
           const trimmed = a.trim();
           if (trimmed && isValidAuthor(trimmed)) {
             authors.push(trimmed);

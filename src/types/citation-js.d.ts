@@ -16,18 +16,10 @@ declare module "citation-js" {
 }
 
 // Plugin declarations
-declare module "@citation-js/plugin-doi" {
-  // Plugin doesn't export anything directly, just registers itself
-}
+declare module "@citation-js/plugin-doi" {}
 
-declare module "@citation-js/plugin-isbn" {
-  // Plugin doesn't export anything directly, just registers itself
-}
+declare module "@citation-js/plugin-isbn" {}
 
-declare module "@citation-js/plugin-bibtex" {
-  // Plugin doesn't export anything directly, just registers itself
-}
+declare module "@citation-js/plugin-bibtex" {}
 
-declare module "@citation-js/plugin-wikidata" {
-  // Plugin doesn't export anything directly, just registers itself
-}
+declare module "@citation-js/plugin-wikidata" {}

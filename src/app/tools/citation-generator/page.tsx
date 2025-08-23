@@ -33,7 +33,9 @@ export default function CitationGenerator() {
         console.log("Citation-js loaded successfully");
       } catch (error) {
         console.error("Failed to load citation-js:", error);
-        setCitation("Failed to load citation library. Please refresh the page.");
+        setCitation(
+          "Failed to load citation library. Please refresh the page."
+        );
       }
     };
 
@@ -85,7 +87,6 @@ export default function CitationGenerator() {
 
     // check for URL patterns that might contain identifiers
     if (trimmedInput.startsWith("http")) {
-
       // try to extract DOI from URL
       const doiFromUrl = extractDOI(trimmedInput);
       if (doiFromUrl) {
@@ -310,7 +311,7 @@ export default function CitationGenerator() {
             disabled={isLoading || !citationLoaded}
             className="px-6 py-2 h-12 bg-[var(--color-primary)] text-white rounded-r-lg hover:bg-green-700 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {isLoading ? "Loading..." : "Cite"}
+            {isLoading ? "Citing..." : "Cite"}
           </button>
         </div>
 
@@ -342,10 +343,10 @@ export default function CitationGenerator() {
                     setTimeout(() => setCopied(false), 2000);
                   }
                 }}
-                className={`flex items-center gap-1 px-3 py-1 text-white text-sm rounded transition-colors duration-200 ${
+                className={`flex items-center gap-1 px-1 w-16 py-1 text-white text-xs rounded transition-colors duration-200 ${
                   copied
-                    ? "bg-green-500 hover:bg-green-700"
-                    : "bg-green-600 hover:bg-green-700"
+                    ? "bg-gray-400 hover:bg-gray-700"
+                    : "bg-gray-400 hover:bg-gray-700"
                 }`}
               >
                 {copied ? (
