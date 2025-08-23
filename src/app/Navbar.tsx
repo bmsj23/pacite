@@ -12,6 +12,7 @@ import {
   Repeat,
   ChevronDown,
 } from "lucide-react";
+import UserDropdown from "@/components/UserDropdown";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -185,12 +186,9 @@ const Navbar = () => {
           })}
         </ul>
 
-        <Link
-          href="/get-started"
-          className="ml-4 px-4 py-2 bg-[var(--color-primary)] text-white rounded-md hover:bg-green-700 transition-colors duration-200"
-        >
-          Get Started
-        </Link>
+        <div className="ml-4">
+          <UserDropdown />
+        </div>
       </div>
 
       {/* Mobile navbar menu button */}
