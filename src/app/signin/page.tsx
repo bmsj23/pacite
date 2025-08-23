@@ -48,13 +48,13 @@ export default function SignIn() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 flex items-center justify-center p-4 pt-20">
       <div className="max-w-md w-full space-y-8">
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <div className="text-center">
-              <h1 className="text-3xl font-bold text-[var(--color-primary)] py-4">
-                Pacite
-              </h1>
+            <h1 className="text-3xl font-bold text-[var(--color-primary)] py-4">
+              Pacite
+            </h1>
             <h2 className="text-3xl font-bold text-gray-900">Welcome back!</h2>
             <p className="mt-2 text-sm text-gray-600">
               Sign in to your account to continue
