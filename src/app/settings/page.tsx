@@ -30,7 +30,7 @@ export default function Settings() {
 
   if (!session) {
     return (
-      <div className="min-h-screen bg-gray-50 pt-28 px-4 sm:px-6 flex items-center justify-center">
+      <div className="min-h-screen bg-gray-50 pt-28 px-4 sm:px-6 pb-4 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-900 mb-4">
             Access Denied
@@ -50,7 +50,7 @@ export default function Settings() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-28 px-4 sm:px-6">
+    <div className="min-h-screen bg-gray-50 pt-28 px-4 sm:px-6 pb-4">
       <div className="w-[90%] max-w-6xl mx-auto">
         {/* Header */}
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 mb-4 sm:mb-6">
