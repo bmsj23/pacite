@@ -8,6 +8,7 @@
   --color-secondary: #1a73e8;
   --color-warning: #fbbc05;
   --color-error: #ea4335;
+  --color-error: #ea4335;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,18 +23,21 @@
   }
 }
 
+html {
+  zoom: 0.8;
+}
+
 body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.min-h-screen {
+  min-height: 125vh !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif), serif;
   font-weight: 600;
   letter-spacing: 0.5;
