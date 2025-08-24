@@ -34,7 +34,7 @@ export default function Profile() {
           </p>
           <a
             href="/signin"
-            className="px-6 py-3 bg-[var(--color-primary)] text-white rounded-lg hover:bg-green-700 transition-colors"
+            className="px-6 py-3 bg-[var(--color-primary)] text-white rounded-lg hover:bg-green-700 transition-colors cursor-pointer"
           >
             Sign In
           </a>
