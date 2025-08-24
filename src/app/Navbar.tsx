@@ -78,8 +78,7 @@ const Navbar = () => {
                     className="relative"
                     onMouseEnter={() => setIsToolsDropdownOpen(true)}
                     onMouseLeave={() => setIsToolsDropdownOpen(false)}>
-                    <Link
-                      href={href}
+                    <Link href={href}
                       className={`flex items-center gap-1 px-3 py-2 rounded-md font-medium transition-colors duration-200 ${
                         pathname.startsWith("/tools")
                           ? "bg-green-50 text-[var(--color-primary)]"
@@ -118,9 +117,7 @@ const Navbar = () => {
                                     e.preventDefault();
                                   }
                                 }}>
-                                <div
-                                  className={`p-2 rounded-lg ${
-                                    tool.available
+                                <div className={`p-2 rounded-lg ${ tool.available
                                       ? "bg-green-100 text-[var(--color-primary)]"
                                       : "bg-gray-100 text-gray-400"
                                   }`}>
@@ -129,8 +126,7 @@ const Navbar = () => {
                                 <div className="flex-1">
                                   <div className="flex items-center gap-2">
                                     <h4
-                                      className={`text-sm font-medium ${
-                                        tool.available
+                                      className={`text-sm font-medium ${ tool.available
                                           ? "text-gray-900"
                                           : "text-gray-500"
                                       }`}>
@@ -142,8 +138,7 @@ const Navbar = () => {
                                       </span>
                                     )}
                                   </div>
-                                  <p
-                                    className={`text-xs mt-1 ${
+                                  <p className={`text-xs mt-1 ${
                                       tool.available
                                         ? "text-gray-600"
                                         : "text-gray-400"
