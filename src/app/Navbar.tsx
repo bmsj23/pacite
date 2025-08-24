@@ -77,23 +77,20 @@ const Navbar = () => {
                   <div
                     className="relative"
                     onMouseEnter={() => setIsToolsDropdownOpen(true)}
-                    onMouseLeave={() => setIsToolsDropdownOpen(false)}
-                  >
+                    onMouseLeave={() => setIsToolsDropdownOpen(false)}>
                     <Link
                       href={href}
                       className={`flex items-center gap-1 px-3 py-2 rounded-md font-medium transition-colors duration-200 ${
                         pathname.startsWith("/tools")
                           ? "bg-green-50 text-[var(--color-primary)]"
                           : "text-gray-700 hover:bg-green-50 hover:text-[var(--color-primary)]"
-                      }`}
-                    >
+                      }`}>
                       {label}
                       <ChevronDown
                         size={16}
                         className={`transition-transform duration-200 ${
                           isToolsDropdownOpen ? "rotate-180" : ""
-                        }`}
-                      />
+                        }`}/>
                     </Link>
 
                     {/* Dropdown Menu with extended hover area */}
@@ -120,15 +117,13 @@ const Navbar = () => {
                                   if (!tool.available) {
                                     e.preventDefault();
                                   }
-                                }}
-                              >
+                                }}>
                                 <div
                                   className={`p-2 rounded-lg ${
                                     tool.available
                                       ? "bg-green-100 text-[var(--color-primary)]"
                                       : "bg-gray-100 text-gray-400"
-                                  }`}
-                                >
+                                  }`}>
                                   <IconComponent size={16} />
                                 </div>
                                 <div className="flex-1">
@@ -138,8 +133,7 @@ const Navbar = () => {
                                         tool.available
                                           ? "text-gray-900"
                                           : "text-gray-500"
-                                      }`}
-                                    >
+                                      }`}>
                                       {tool.label}
                                     </h4>
                                     {!tool.available && (
@@ -153,8 +147,7 @@ const Navbar = () => {
                                       tool.available
                                         ? "text-gray-600"
                                         : "text-gray-400"
-                                    }`}
-                                  >
+                                    }`}>
                                     {tool.description}
                                   </p>
                                 </div>
@@ -177,8 +170,7 @@ const Navbar = () => {
                     pathname === href
                       ? "bg-green-50 text-[var(--color-primary)]"
                       : "text-gray-700 hover:bg-green-50 hover:text-[var(--color-primary)]"
-                  }`}
-                >
+                  }`}>
                   {label}
                 </Link>
               </li>
@@ -195,8 +187,7 @@ const Navbar = () => {
 
       <button
         className="md:hidden p-2 rounded-md hover:bg-gray-100"
-        onClick={() => setIsOpen(!isOpen)}
-      >
+        onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
       </button>
 
@@ -214,8 +205,7 @@ const Navbar = () => {
                         pathname.startsWith("/tools")
                           ? "bg-green-50 text-[var(--color-primary)]"
                           : "text-gray-700 hover:bg-green-50 hover:text-[var(--color-primary)]"
-                      }`}
-                    >
+                      }`}>
                       {label}
                     </Link>
 
@@ -238,15 +228,13 @@ const Navbar = () => {
                               tool.available
                                 ? "hover:bg-green-50 cursor-pointer"
                                 : "opacity-60 cursor-not-allowed"
-                            }`}
-                          >
+                            }`}>
                             <div
                               className={`p-1.5 rounded-md ${
                                 tool.available
                                   ? "bg-green-100 text-[var(--color-primary)]"
                                   : "bg-gray-100 text-gray-400"
-                              }`}
-                            >
+                              }`}>
                               <IconComponent size={14} />
                             </div>
                             <div className="flex-1">
@@ -256,8 +244,7 @@ const Navbar = () => {
                                     tool.available
                                       ? "text-gray-900"
                                       : "text-gray-500"
-                                  }`}
-                                >
+                                  }`}>
                                   {tool.label}
                                 </span>
                                 {!tool.available && (
@@ -284,8 +271,7 @@ const Navbar = () => {
                       pathname === href
                         ? "bg-green-50 text-[var(--color-primary)]"
                         : "text-gray-700 hover:bg-green-50 hover:text-[var(--color-primary)]"
-                    }`}
-                  >
+                    }`}>
                     {label}
                   </Link>
                 </li>

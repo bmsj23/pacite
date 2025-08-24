@@ -93,15 +93,13 @@ export default function Profile() {
                   <div className="relative">
                     <User
                       className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
-                      size={16}
-                    />
+                      size={16}/>
                     <input
                       type="text"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent"
-                      placeholder="Enter your full name"
-                    />
+                      placeholder="Enter your full name"/>
                   </div>
                 ) : (
                   <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
@@ -122,15 +120,13 @@ export default function Profile() {
                   <div className="relative">
                     <Mail
                       className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
-                      size={16}
-                    />
+                      size={16}/>
                     <input
                       type="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent"
-                      placeholder="Enter your email"
-                    />
+                      placeholder="Enter your email"/>
                   </div>
                 ) : (
                   <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">

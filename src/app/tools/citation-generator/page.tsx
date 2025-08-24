@@ -300,8 +300,7 @@ export default function CitationGenerator() {
             placeholder="Enter any URL, DOI, or ISBN..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            className="flex-1 h-12 p-4 border border-gray-300 sm:border-l-0 sm:border-r-0 text-black focus:outline-none focus:ring-0 focus:shadow-md transition box-border rounded-lg sm:rounded-none"
-          />
+            className="flex-1 h-12 p-4 border border-gray-300 sm:border-l-0 sm:border-r-0 text-black focus:outline-none focus:ring-0 focus:shadow-md transition box-border rounded-lg sm:rounded-none"/>
 
           {/* Cite button on the right */}
           <button
