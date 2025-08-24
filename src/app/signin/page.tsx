@@ -52,10 +52,12 @@ export default function SignIn() {
       <div className="w-[90%] max-w-md space-y-8">
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <div className="text-center">
-            <h1 className="text-3xl font-bold text-[var(--color-primary)] py-4">
-              Pacite
-            </h1>
-            <h2 className="text-3xl font-bold text-gray-900">Welcome back!</h2>
+            <Link href="/" className="inline-block">
+              <h1 className="text-3xl font-bold text-[var(--color-primary)]">
+                Pacite
+              </h1>
+            </Link>
+            <h2 className="mt-6 text-3xl font-bold text-gray-900">Welcome back!</h2>
             <p className="mt-2 text-sm text-gray-600">
               Sign in to your account to continue
             </p>
