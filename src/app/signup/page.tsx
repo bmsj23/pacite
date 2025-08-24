@@ -76,13 +76,7 @@ export default function SignUp() {
               Create your account
             </h2>
             <p className="mt-2 text-sm text-gray-600">
-              Or{" "}
-              <Link
-                href="/signin"
-                className="font-medium text-[var(--color-primary)] hover:text-green-700 transition-colors"
-              >
-                sign in to your existing account
-              </Link>
+              Enter the details below for your new account
             </p>
           </div>
 
@@ -97,8 +91,7 @@ export default function SignUp() {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium text-gray-700"
-                >
+                  className="block text-sm font-medium text-gray-700">
                   Full name
                 </label>
                 <div className="mt-1 relative">
@@ -122,8 +115,7 @@ export default function SignUp() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
-                >
+                  className="block text-sm font-medium text-gray-700">
                   Email address
                 </label>
                 <div className="mt-1 relative">
@@ -147,8 +139,7 @@ export default function SignUp() {
               <div>
                 <label
                   htmlFor="password"
-                  className="block text-sm font-medium text-gray-700"
-                >
+                  className="block text-sm font-medium text-gray-700">
                   Password
                 </label>
                 <div className="mt-1 relative">
@@ -169,8 +160,7 @@ export default function SignUp() {
                   <button
                     type="button"
                     className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer"
-                    onClick={() => setShowPassword(!showPassword)}
-                  >
+                    onClick={() => setShowPassword(!showPassword)}>
                     {showPassword ? (
                       <EyeOff className="h-5 w-5 text-gray-400 hover:text-gray-600" />
                     ) : (
@@ -183,8 +173,7 @@ export default function SignUp() {
               <div>
                 <label
                   htmlFor="confirmPassword"
-                  className="block text-sm font-medium text-gray-700"
-                >
+                  className="block text-sm font-medium text-gray-700">
                   Confirm Password
                 </label>
                 <div className="mt-1 relative">
@@ -205,8 +194,7 @@ export default function SignUp() {
                   <button
                     type="button"
                     className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer"
-                    onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                  >
+                    onClick={() => setShowConfirmPassword(!showConfirmPassword)}>
                     {showConfirmPassword ? (
                       <EyeOff className="h-5 w-5 text-gray-400 hover:text-gray-600" />
                     ) : (
@@ -221,8 +209,7 @@ export default function SignUp() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-lg text-white bg-[var(--color-primary)] hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-primary)] disabled:opacity-50 disabled:cursor-not-allowed transition-colors cursor-pointer"
-              >
+                className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-lg text-white bg-[var(--color-primary)] hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-primary)] disabled:opacity-50 disabled:cursor-not-allowed transition-colors cursor-pointer">
                 {isLoading ? "Creating account..." : "Create account"}
               </button>
             </div>
@@ -244,8 +231,7 @@ export default function SignUp() {
                   type="button"
                   onClick={handleGoogleSignIn}
                   disabled={isLoading}
-                  className="w-full inline-flex justify-center py-3 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
-                >
+                  className="w-full inline-flex justify-center py-3 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer">
                   <svg className="w-5 h-5" viewBox="0 0 24 24">
                     <path
                       fill="currentColor"
@@ -269,6 +255,16 @@ export default function SignUp() {
               </div>
             </div>
           </form>
+                    <div className="mt-6 text-center">
+            <p className="text-sm text-gray-600">
+              Already have an account?{" "}
+              <Link
+                href="/signin"
+                className="font-medium text-primary hover:text-primary-dark transition-colors text-[var(--color-primary)] hover:text-green-700 hover:shadow-xs">
+                Sign in
+              </Link>
+            </p>
+          </div>
         </div>
       </div>
     </div>

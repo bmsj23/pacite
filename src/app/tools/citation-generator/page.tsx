@@ -273,8 +273,7 @@ export default function CitationGenerator() {
           <div className="relative z-10 w-full sm:w-auto">
             <button
               onClick={() => setOpen(!open)}
-              className="flex items-center justify-between px-4 h-12 w-full sm:w-32 bg-gray-100 border border-gray-300 rounded-lg sm:rounded-l-lg sm:rounded-r-none text-gray-700 text-sm focus:outline-none hover:overflow-hidden focus:ring-0 transition box-border"
-            >
+              className="flex items-center justify-between px-4 h-12 w-full sm:w-32 bg-gray-100 border border-gray-300 rounded-lg sm:rounded-l-lg sm:rounded-r-none text-gray-700 text-sm focus:outline-none hover:overflow-hidden focus:ring-0 transition box-border">
               {format} <span className="ml-1">&#9662;</span>
             </button>
 
@@ -287,8 +286,7 @@ export default function CitationGenerator() {
                       setFormat(option);
                       setOpen(false);
                     }}
-                    className="px-3 py-2 cursor-pointer text-gray-700 hover:rounded-md hover:bg-[var(--color-primary)] hover:text-white transition"
-                  >
+                    className="px-3 py-2 cursor-pointer text-gray-700 hover:rounded-md hover:bg-[var(--color-primary)] hover:text-white transition">
                     {option}
                   </li>
                 ))}
@@ -309,8 +307,7 @@ export default function CitationGenerator() {
           <button
             onClick={handleCite}
             disabled={isLoading || !citationLoaded}
-            className="px-6 py-2 h-12 bg-[var(--color-primary)] text-white rounded-lg sm:rounded-l-none sm:rounded-r-lg hover:bg-green-700 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed w-full sm:w-auto"
-          >
+            className="px-6 py-2 h-12 bg-[var(--color-primary)] text-white rounded-lg sm:rounded-l-none sm:rounded-r-lg hover:bg-green-700 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed w-full sm:w-auto">
             {isLoading ? "Citing..." : "Cite"}
           </button>
         </div>
@@ -347,8 +344,7 @@ export default function CitationGenerator() {
                   copied
                     ? "bg-gray-400 hover:bg-gray-700"
                     : "bg-gray-400 hover:bg-gray-700"
-                }`}
-              >
+                }`}>
                 {copied ? (
                   <>
                     <Check size={14} />

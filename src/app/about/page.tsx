@@ -21,7 +21,6 @@ export default function About() {
       <section className="py-20 px-6 bg-gray-50">
         <div className="w-[90%] max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
              <span className="text-[var(--color-primary)]">Pacite&apos;s </span>Mission
             </h2>
@@ -143,8 +142,7 @@ export default function About() {
           </p>
           <Link
             href="/#tools"
-            className="inline-block px-8 py-4 bg-white text-[var(--color-primary)] rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors duration-200"
-          >
+            className="inline-block px-8 py-4 bg-white text-[var(--color-primary)] rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors duration-200">
             Start Writing Better Today
           </Link>
         </div>

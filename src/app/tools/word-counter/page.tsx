@@ -36,8 +36,7 @@ export default function WordCounter() {
         {/* Button */}
         <button
           className="mt-4 sm:mt-6 px-4 sm:px-6 py-2 sm:py-3 bg-[var(--color-primary)] text-white font-medium rounded-lg shadow-md hover:bg-green-700 hover:shadow-lg transition-all duration-200 text-sm sm:text-base"
-          onClick={() => alert(`Total words: ${wordCount}`)}
-        >
+          onClick={() => alert(`Total words: ${wordCount}`)}>
           Count Words
         </button>
       </div>

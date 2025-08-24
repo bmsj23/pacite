@@ -34,8 +34,7 @@ export default function Profile() {
           </p>
           <a
             href="/signin"
-            className="px-6 py-3 bg-[var(--color-primary)] text-white rounded-lg hover:bg-green-700 transition-colors cursor-pointer"
-          >
+            className="px-6 py-3 bg-[var(--color-primary)] text-white rounded-lg hover:bg-green-700 transition-colors cursor-pointer">
             Sign In
           </a>
         </div>
@@ -69,8 +68,7 @@ export default function Profile() {
               </div>
               <button
                 onClick={() => setIsEditing(!isEditing)}
-                className="flex items-center justify-center gap-2 px-4 py-2 bg-[var(--color-primary)] text-white rounded-lg hover:bg-green-700 transition-colors text-sm sm:text-base w-full sm:w-auto sm:self-start"
-              >
+                className="flex items-center justify-center gap-2 px-4 py-2 bg-[var(--color-primary)] text-white rounded-lg hover:bg-green-700 transition-colors text-sm sm:text-base w-full sm:w-auto sm:self-start">
                 <Edit2 size={16} />
                 {isEditing ? "Cancel" : "Edit Profile"}
               </button>
@@ -165,15 +163,13 @@ export default function Profile() {
               <div className="flex flex-col sm:flex-row gap-3 mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-gray-200">
                 <button
                   onClick={handleSave}
-                  className="flex items-center justify-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-[var(--color-primary)] text-white rounded-lg hover:bg-green-700 transition-colors text-sm sm:text-base"
-                >
+                  className="flex items-center justify-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-[var(--color-primary)] text-white rounded-lg hover:bg-green-700 transition-colors text-sm sm:text-base">
                   <Save size={16} />
                   Save Changes
                 </button>
                 <button
                   onClick={handleCancel}
-                  className="flex items-center justify-center gap-2 px-4 sm:px-6 py-2 sm:py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors text-sm sm:text-base"
-                >
+                  className="flex items-center justify-center gap-2 px-4 sm:px-6 py-2 sm:py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors text-sm sm:text-base">
                   <X size={16} />
                   Cancel
                 </button>

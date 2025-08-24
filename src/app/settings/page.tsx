@@ -40,8 +40,7 @@ export default function Settings() {
           </p>
           <a
             href="/signin"
-            className="px-6 py-3 bg-[var(--color-primary)] text-white rounded-lg hover:bg-green-700 transition-colors"
-          >
+            className="px-6 py-3 bg-[var(--color-primary)] text-white rounded-lg hover:bg-green-700 transition-colors">
             Sign In
           </a>
         </div>
@@ -144,8 +143,7 @@ export default function Settings() {
                   <select
                     value={theme}
                     onChange={(e) => setTheme(e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent"
-                  >
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent">
                     <option value="light">Light</option>
                     <option value="dark">Dark</option>
                     <option value="system">System</option>
@@ -173,8 +171,7 @@ export default function Settings() {
                   <select
                     value={language}
                     onChange={(e) => setLanguage(e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent"
-                  >
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent">
                     <option value="en">English</option>
                     <option value="es">Spanish</option>
                     <option value="fr">French</option>
@@ -210,8 +207,7 @@ export default function Settings() {
 
                 <button
                   onClick={() => signOut()}
-                  className="flex items-center gap-3 w-full p-3 text-left border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors"
-                >
+                  className="flex items-center gap-3 w-full p-3 text-left border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
                   <LogOut size={16} className="text-gray-400" />
                   <div>
                     <h3 className="text-sm font-medium text-gray-900">
@@ -239,8 +235,7 @@ export default function Settings() {
               <div className="space-y-4">
                 <button
                   onClick={() => setShowDeleteConfirm(true)}
-                  className="flex items-center gap-3 w-full p-3 text-left border border-red-200 rounded-lg hover:bg-red-50 transition-colors"
-                >
+                  className="flex items-center gap-3 w-full p-3 text-left border border-red-200 rounded-lg hover:bg-red-50 transition-colors">
                   <Trash2 size={16} className="text-red-500" />
                   <div>
                     <h3 className="text-sm font-medium text-red-600">
@@ -273,14 +268,12 @@ export default function Settings() {
               <div className="flex gap-3">
                 <button
                   onClick={handleDeleteAccount}
-                  className="flex-1 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
-                >
+                  className="flex-1 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors">
                   Delete Account
                 </button>
                 <button
                   onClick={() => setShowDeleteConfirm(false)}
-                  className="flex-1 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors"
-                >
+                  className="flex-1 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
                   Cancel
                 </button>
               </div>
