@@ -3,14 +3,14 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-gray-50 pt-28">
+    <div className="min-h-screen bg-white pt-28">
       {/* Hero Section */}
       <section className="relative bg-white py-20 px-6">
         <div className="w-[90%] max-w-6xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             About <span className="text-[var(--color-primary)]">Pacite</span>
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed text-justify">
+          <p className="text-xl text-gray-600 leading-relaxed text-center">
             Empowering students, researchers, and writers with intelligent tools
             that make academic and professional writing effortless and accurate.
           </p>
@@ -21,8 +21,9 @@ export default function About() {
       <section className="py-20 px-6 bg-gray-50">
         <div className="w-[90%] max-w-6xl mx-auto">
           <div className="text-center mb-16">
+            
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Pacite&apos;s Mission
+             <span className="text-[var(--color-primary)]">Pacite&apos;s </span>Mission
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto text-justify">
               Pacite believes that great ideas shouldn&apos;t be hindered by
@@ -34,13 +35,13 @@ export default function About() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-[var(--color-primary)] rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-[var(--color-primary)] rounded-full flex items-center justify-center text-justify mx-auto mb-4">
                 <BookOpenCheck className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 Accuracy
               </h3>
-              <p className="text-gray-600 text-justify">
+              <p className="text-gray-600 text-center">
                 Precise citations and formatting that meet academic standards
               </p>
             </div>
@@ -52,7 +53,7 @@ export default function About() {
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 Efficiency
               </h3>
-              <p className="text-gray-600 text-justify">
+              <p className="text-gray-600 text-center">
                 Save time with automated tools that work faster than manual
                 methods
               </p>
@@ -65,7 +66,7 @@ export default function About() {
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 Accessibility
               </h3>
-              <p className="text-gray-600 text-justify">
+              <p className="text-gray-600 text-center">
                 Free tools available to everyone, regardless of background or
                 budget
               </p>
@@ -78,7 +79,7 @@ export default function About() {
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 Innovation
               </h3>
-              <p className="text-gray-600 text-justify">
+              <p className="text-gray-600 text-center">
                 Cutting-edge technology that evolves with your writing needs
               </p>
             </div>
@@ -86,39 +87,11 @@ export default function About() {
         </div>
       </section>
 
-      {/* Story Section */}
+      {/* Features Section */}
       <section className="py-20 px-6 bg-white">
         <div className="w-[90%] max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
-            Our Story
-          </h2>
-          <div className="prose prose-lg mx-auto text-gray-600">
-            <p className="text-lg leading-relaxed mb-6 text-justify">
-              Pacite was born from a simple observation: students and
-              researchers spend countless hours on formatting and citation tasks
-              that could be automated. As writers ourselves, we understood the
-              frustration of losing creative flow to technical details.
-            </p>
-            <p className="text-lg leading-relaxed mb-6 text-justify">
-              What started as a solution for citation generation has evolved
-              into a comprehensive suite of writing tools. Each feature is
-              designed with one goal in mind: to remove barriers between you and
-              your best work.
-            </p>
-            <p className="text-lg leading-relaxed text-justify">
-              Today, Pacite will serve users worldwide, from undergraduate
-              students working on their first research papers to seasoned
-              academics publishing groundbreaking research.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="py-20 px-6 bg-gray-50">
-        <div className="w-[90%] max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-            What Makes Pacite Special
+            What Makes <span className="text-[var(--color-primary)]">Pacite</span> Special
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
             <div>
@@ -165,7 +138,7 @@ export default function About() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready to Transform Your Writing?
           </h2>
-          <p className="text-xl text-green-100 mb-8 text-justify">
+          <p className="text-xl text-green-100 mb-8 text-center">
             Now, be one to experience the power of Pacite.
           </p>
           <Link
