@@ -3,7 +3,7 @@ import { BookOpenCheck, FileText, SpellCheck, Repeat } from "lucide-react";
 
 export default function Tools() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 px-4 sm:px-6 pt-28">
+    <main className="flex flex-col items-center justify-center min-h-screen max-w-6xl mx-auto bg-white px-4 sm:px-6 pt-6">
       <div className="text-center w-[90%] max-w-6xl mx-auto">
         <h1 className="pt-10 text-3xl sm:text-4xl font-bold text-[var(--color-primary)]">
           Welcome to Pacite!
