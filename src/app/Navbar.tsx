@@ -3,15 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import {
-  Menu,
-  X,
-  BookOpenCheck,
-  FileText,
-  SpellCheck,
-  Repeat,
-  ChevronDown,
-} from "lucide-react";
+import { Menu, X, BookOpenCheck, FileText, SpellCheck, Repeat, ChevronDown } from "lucide-react";
 import UserDropdown from "@/components/UserDropdown";
 
 const Navbar = () => {
