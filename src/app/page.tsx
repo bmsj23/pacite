@@ -91,7 +91,7 @@ export default function Home() {
           <div className="flex flex-col p-6 rounded-2xl shadow-md border bg-gray-100 hover:shadow-lg transition-all opacity-70 h-full text-center justify-center">
             <SpellCheck className="w-12 h-12 text-gray-400 mx-auto" />
             <h3 className="mt-4 text-xl font-semibold text-gray-500 text-center">
-              Grammar Check
+              Grammar Checker
             </h3>
             <div className="flex flex-col flex-grow justify-center text-center">
               <p className="mt-2 text-gray-500 text-sm italic">Coming soon!</p>
